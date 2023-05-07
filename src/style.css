@@ -83,7 +83,7 @@
     border: 1px solid white;
     border-radius: 10px;
     width: 75%;
-    height: 90%;
+    height: 80%;
     display: flex;
     overflow: hidden;
 }
@@ -303,17 +303,23 @@
 
 
 /* media query */
-@media screen and (max-width: 700px) {
-    .container{
-        width: 95%;
-        height: 70%;
+@media screen and (max-width: 900px) {
+    .home{
+        width: 100%;
     }
 
-    .sidebar{
+    .home .container{
+        width: 98%;
+        height: 80%;
+    }
+
+    .container .sidebar{
+        flex: 0;
         width: 20%;
     }
 
     .chat{
+        flex: 0;
         width: 80%;
     }
 
@@ -322,6 +328,14 @@
     }
 
     .userChatInfo{
+        display: none;
+    }
+
+    .navbar .user span{
+        display: none;
+    }
+
+    .navbar .user button{
         display: none;
     }
 }
