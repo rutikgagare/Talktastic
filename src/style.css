@@ -310,7 +310,7 @@
 
     .home .container{
         width: 98%;
-        height: 90%;
+        height: 80%;
     }
 
     .container .sidebar{
@@ -337,5 +337,31 @@
 
     .navbar .user button{
         display: none;
+    }
+
+    .navbar .user{
+        background-color: yello;
+    }
+
+    .navbar .user img{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: auto;
+    }
+
+    .message .messageInfo{
+        display: none;
+    }
+
+    .messages{
+        padding: 10px;
+    }
+
+    .messages .message{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
     }
 }
