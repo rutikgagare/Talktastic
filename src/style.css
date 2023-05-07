@@ -82,8 +82,8 @@
 .home .container{
     border: 1px solid white;
     border-radius: 10px;
-    width: 65%;
-    height: 80%;
+    width: 75%;
+    height: 90%;
     display: flex;
     overflow: hidden;
 }
