@@ -73,12 +73,21 @@ const Input = () => {
     setText("");
     setImg(null);
   };
+
+  const handleSendonEnter = (e) =>{
+    if(e.code === "Enter"){
+      handleSend();
+    }
+  }
+
+
   return (
     <div className="input">
       <input
         type="text"
         placeholder="Type something..."
         onChange={(e) => setText(e.target.value)}
+        onKeyDown={handleSendonEnter} 
         value={text}
       />
       <div className="send">
@@ -92,7 +101,8 @@ const Input = () => {
         <label htmlFor="file">
           <img src={Img} alt="" />
         </label>
-        <button onClick={handleSend}>Send</button>
+        <button 
+          onClick={handleSend}>Send</button>
       </div>
     </div>
   );
