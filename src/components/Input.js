@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import Img from "../images/img.png";
-import Attach from "../images/attach.png";
+// import Attach from "../images/attach.png";
 import AuthContext from "../context/AuthContext";
 import chatContext from "../context/ChatContext";
 import {
