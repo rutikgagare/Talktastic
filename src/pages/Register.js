@@ -57,7 +57,7 @@ const Register = () => {
     return (
       <div className='formContainer'>
         <div className='formWrapper'>
-          <span className='logo'>Chatting App - SignUp</span>
+          <span className='logo'>Talktastic - SignUp</span>
 
           <form onSubmit={submitHandler}>
             <input type="text" placeholder='Username' />

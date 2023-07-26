@@ -22,7 +22,7 @@ const Login = () => {
   return (
     <div className='formContainer'>
         <div className='formWrapper'>
-            <span className='logo'>Chatting App - SignIn</span>
+            <span className='logo'>Talktastic - SignIn</span>
             
             <form onSubmit={submitHandler}>
                 <input type="email" placeholder='Email' />
