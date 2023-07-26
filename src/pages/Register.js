@@ -57,13 +57,12 @@ const Register = () => {
     return (
       <div className='formContainer'>
         <div className='formWrapper'>
-          <span className='logo'>Chatting App</span>
-          <span className='title'>Register</span>
+          <span className='logo'>Chatting App - SignUp</span>
 
           <form onSubmit={submitHandler}>
-            <input type="text" placeholder='display name' />
-            <input type="email" placeholder='email' />
-            <input type="password" placeholder='password' />
+            <input type="text" placeholder='Username' />
+            <input type="email" placeholder='Email' />
+            <input type="password" placeholder='Password' />
             <input type="file" id='file' style={{ display: "none" }} />
             <label htmlFor="file">
               <img src={Add} alt="" />

@@ -22,12 +22,11 @@ const Login = () => {
   return (
     <div className='formContainer'>
         <div className='formWrapper'>
-            <span className='logo'>Chatting App</span>
-            <span className='title'>Login</span>
+            <span className='logo'>Chatting App - SignIn</span>
             
             <form onSubmit={submitHandler}>
-                <input type="email" placeholder='email' />
-                <input type="password" placeholder='password' />
+                <input type="email" placeholder='Email' />
+                <input type="password" placeholder='Password' />
                 <button>Sign in</button>
                 {error && <p>Something Went Wrong</p>}
             </form>

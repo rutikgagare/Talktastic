@@ -17,7 +17,7 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 20px 60px;
+    padding: 2rem;
     border-radius: 10px;
     gap: 10px;
     align-items: center;
@@ -32,15 +32,17 @@
 .formWrapper form input{
     padding: 15px;
     border: none;
+    outline:none;
     width: 250px;
-    border-bottom: 1px solid #a7bcff;
+    border-bottom: 1px solid #7087d3;
 }
 
 .formWrapper form button{
-    background-color: #7b96ec;
+    background-color: #6882d8;
     color: white;
     padding: 10px;
     font-weight: bold;
+    font-size: 0.8rem;
     cursor: pointer;
     border: none;
 }
@@ -55,7 +57,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #8da4f1;
+    color: #6579bc;
     font-size: 12px;
     cursor: pointer;
 }
@@ -73,6 +75,7 @@
 /* home styling */
 .home{
     background-color: #a7bcff;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -80,10 +83,9 @@
 }
 
 .home .container{
-    border: 1px solid white;
-    border-radius: 10px;
-    width: 70%;
-    height: 80%;
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 100vh;
     display: flex;
     overflow: hidden;
 }
@@ -91,12 +93,10 @@
 .container .sidebar{
     flex: 1;
     background-color: #3e3c61;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
 .container .chat{
-    flex: 2;
+    flex: 3;
 }
 
 /* sidebar styling */
@@ -106,7 +106,7 @@
     align-items: center;
     background-color: #2f2d52;
     height: 50px;
-    padding: 10px;
+    padding: 0.5rem 1rem;
     justify-content: space-between;
     color: #ddddf7;
 }
@@ -121,10 +121,14 @@
     gap: 10px;
 }
 
+.navbar .user i{
+    display: none;
+}
+
 .navbar .user img{
     background-color: #ddddf7;
-    height: 24px;
-    width: 24px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -132,10 +136,10 @@
 .navbar .user button{
     background-color: #5d5b8d;
     color: #ddddf7;
-    font-size: 12px;
+    font-size: 0.9rem;
     border: none;
-    padding: 5px;
-    cursor: pointer;
+    padding: 0.5rem 1rem;
+    cursor: pointer;border-radius: 0.5rem;
 }
 
 .search{
@@ -143,7 +147,7 @@
 }
 
 .search-form{
-    padding: 10px;
+    padding: 1rem;
 }
 
 .search-form input{
@@ -210,7 +214,7 @@
 
 /* messages */
 .messages{
-    padding: 10px;
+    padding: 1rem;
     background-color: #ddddf7;
     height: calc(100% - 100px);
     overflow: scroll;
@@ -218,6 +222,7 @@
 
 .messages .message{
     display: flex;
+    text-overflow: hidden;
     gap: 20px;
     margin-bottom: 20px;
 }
@@ -303,24 +308,24 @@
 
 
 /* media query */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .home{
         width: 100%;
     }
 
     .home .container{
-        width: 98%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
     }
 
     .container .sidebar{
         flex: 0;
-        width: 20%;
+        width: 25%;
     }
 
     .chat{
         flex: 0;
-        width: 80%;
+        width: 75%;
     }
 
     .sidebar .navbar .logo{
@@ -337,6 +342,10 @@
 
     .navbar .user button{
         display: none;
+    }
+
+    .navbar .user i{
+        display: block;
     }
 
     .navbar .user{
@@ -363,5 +372,9 @@
         display: flex;
         gap: 10px;
         margin-bottom: 10px;
+    }
+
+    .formWrapper{
+        width: 90%;
     }
 }
