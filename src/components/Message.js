@@ -20,12 +20,12 @@ const Message = (props) => {
         <img
           src={
             props.message.senderId === currentUser.uid
-              ? currentUser.photoURL
-              : data.user.photoURL
+              ? currentUser?.photoURL
+              : data.user?.photoURL
           }
           alt=""
         />
-        <span>just now</span>
+        {/* <span>{props.date}</span> */}
       </div>
       <div className="messageContent">
         <p>{props.message.text}</p>
